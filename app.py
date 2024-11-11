@@ -72,7 +72,6 @@ class SignLanguageProcessor:
         )
 
     def process_frame(self, frame):
-        frame = cv2.flip(frame, 1)
         image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = self.holistic.process(image)
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
