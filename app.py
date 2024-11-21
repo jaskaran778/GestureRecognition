@@ -22,7 +22,7 @@ class SignLanguageProcessor:
         self.threshold = 0.4
 
         # Load model
-        model_path = Path(__file__).parent / "sign_language_model3.h5"
+        model_path = Path(__file__).parent / "sign_language_model_final.h5"
         self.model = load_model(model_path)
 
         # Initialize holistic
